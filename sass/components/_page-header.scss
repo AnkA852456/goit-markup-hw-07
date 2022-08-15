@@ -1,0 +1,121 @@
+$displayPosition: flex;
+
+.page-header {
+display: $displayPosition;
+border-bottom: 1px solid #ECECEC;
+}
+
+.page-nav {
+display: $displayPosition;
+align-items: center;
+
+&__logo {
+margin-right: 93px;
+padding-top: 24px;
+padding-bottom: 24px;
+
+color: $textColorAccent;
+font-family: $secondaryTextFont;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+}
+
+&__logo--header {
+color: $textColorLogo;
+}
+}
+
+.site-nav {
+display: $displayPosition;
+align-items: center;
+
+font-family: $mainTextFont;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
+font-size: $headerFontSize;
+
+&__item {
+position: relative;
+}
+
+&__item:not(:last-child) {
+margin-right: 50px;
+}
+
+&__link {
+display: block;
+padding-top: 32px;
+padding-bottom: 32px;
+
+color: $textColorHeaders;
+
+transition: color $transitionCubic;
+}
+
+&__link:hover,
+&__link:focus {
+color: $textColorAccent;
+}
+
+&__link--current {
+color: $textColorAccent;
+}
+
+&__link--current::after{
+position: absolute;
+bottom: -1px;
+left: 0;
+
+content: "";
+width: 100%;
+height: 4px;
+background-color: $textColorAccent;
+border-radius: 2px;
+}
+}
+
+.auth-nav {
+display: $displayPosition;
+align-items: center;
+margin-left: auto;
+
+font-family: $mainTextFont;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
+font-size: $headerFontSize;
+
+&__item:not(:last-child) {
+margin-right: 50px;
+}
+
+&__link {
+display: $displayPosition;
+align-items: center;
+padding-top: 32px;
+padding-bottom: 32px;
+
+color: $textColorMain;
+
+transition: color $transitionCubic;
+}
+
+&__link:hover,
+&__link:focus {
+color: $textColorAccent;
+}
+
+&__icon {
+margin-right: 10px;
+fill: currentColor;
+}
+
+&__icon:hover,
+&__icon:focus {
+fill: $textColorAccent;
+}
+}
+
