@@ -20,10 +20,11 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-}
+}}
 
-&__logo--header {
-color: $textColorLogo;
+.page-nav__logo {
+&--header {
+color: $textColorLogo
 }
 }
 
@@ -53,18 +54,20 @@ padding-bottom: 32px;
 color: $textColorHeaders;
 
 transition: color $transitionCubic;
-}
 
-&__link:hover,
-&__link:focus {
+&:hover,
+&:focus {
 color: $textColorAccent;
 }
+}}
 
-&__link--current {
+.site-nav__link {
+&--current {
 color: $textColorAccent;
-}
+}}
 
-&__link--current::after{
+.site-nav__link--current {
+&::after {
 position: absolute;
 bottom: -1px;
 left: 0;
@@ -103,19 +106,20 @@ color: $textColorMain;
 transition: color $transitionCubic;
 }
 
-&__link:hover,
-&__link:focus {
-color: $textColorAccent;
-}
-
 &__icon {
 margin-right: 10px;
-fill: currentColor;
+fill: currentColor;}
 }
 
-&__icon:hover,
-&__icon:focus {
+.auth-nav__link {
+&:hover,
+&:focus {
+color: $textColorAccent;
+}}
+
+.auth-nav__icon {
+&:hover,
+&:focus {
 fill: $textColorAccent;
-}
-}
+}}
 
