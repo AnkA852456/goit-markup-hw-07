@@ -53,46 +53,4 @@ letter-spacing: 0.03em;
 font-size: 16px;
 margin-bottom: 16px;
 }
-
-&__socials-list {
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-width: 206px;
-}
-
-&__socials-item {
-display: flex;
-flex-basis: calc((100% - 10px * 3)/4);
-height: 44px;
-align-items: center;
-justify-content: center;
-}
-
-&__socials-item:not(:last-child) {
-margin-right: 10px;}
-
-&__socials-link {
-display: flex;
-align-items: center;
-justify-content: center;
-
-color: #AFB1B8;
-border-radius: 50%;
-width: 44px;
-height: 44px;
-
-transition: color $transitionCubic, background-color $transitionCubic;
-
-&:hover,
-&:focus {
-background-color: $textColorAccent;
-color: $backGroundColorMain;
-}
-}
-
-&__socials-pictogram {
-fill: currentColor;
-}
 }

@@ -9,23 +9,6 @@ border-bottom: 1px solid #ECECEC;
 display: $displayPosition;
 align-items: center;
 
-&__logo {
-margin-right: 93px;
-padding-top: 24px;
-padding-bottom: 24px;
-
-color: $textColorAccent;
-font-family: $secondaryTextFont;
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-}}
-
-.page-nav__logo {
-&--header {
-color: $textColorLogo
-}
 }
 
 .site-nav {
