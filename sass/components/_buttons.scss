@@ -68,8 +68,7 @@ border-radius: 50%;
 &:focus {
 fill: $textColorAccent;
 border-color: $textColorAccent;
-}
-}
+}}
 
 &--submit {
 display: flex;
@@ -79,5 +78,33 @@ justify-content: center;
 font-family: $mainTextFont;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
+}}
+
+// Portfolio-buttons ----------------------------->
+.button-projects {
+padding: 6px 22px;
+
+font-size: $headerFontSize;
+font-family: $mainTextFont;
+font-weight: 500;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+color: $textColorHeaders;
+border-style: none;
+background-color: $backGroundColorThird;
+border-radius: 4px;
+
+cursor: pointer;
+transition: background-color $transitionCubic;
+&:hover,
+&:focus {
+color: $backGroundColorMain;
+background-color: $textColorAccent;
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-}
+
+&--current {
+background-color: $textColorAccent;
+color: $backGroundColorMain;
+}}
