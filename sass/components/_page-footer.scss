@@ -11,16 +11,17 @@ align-items: baseline;
 }
 
 &__contacts {
-    margin-right: 70px;
+margin-right: 70px;
 }
 
 &__adress {
-    font-style: normal;
+font-style: normal;
 font-size: 14px;
 }
 
 &__contacts-list {
-    padding: 0;
+@extend %list;
+padding: 0;
 
 line-height: 1.71;
 letter-spacing: 0.03em;}
@@ -29,41 +30,37 @@ letter-spacing: 0.03em;}
 &__mail {  
 margin-bottom: 9px;
 color: $backGroundColorMain;
-
-}
-}
+}}
 
 .page-footer__map-link {
-    transition: color $transitionCubic;
-    
-    &--white {
-    color:$backGroundColorMain;}
+@extend %link;
+transition: color $transitionCubic;
 
-    &:hover,
-    &:focus {
-    color: $textColorAccent;
-    }
-    }
+&--white {
+color:$backGroundColorMain;}
 
+&:hover,
+&:focus {
+color: $textColorAccent;
+}}
 
 .page-footer__mail-link,
 .page-footer__tel-link {
+@extend %link;
 transition: color $transitionCubic;
 
-    &--grey {
-    color: rgba(255, 255, 255, 0.6);
-    }
-
-
-    &:hover,
-    &:focus {
-    color: $textColorAccent;
+&--grey {
+color: rgba(255, 255, 255, 0.6);
 }
-}
+
+&:hover,
+&:focus {
+color: $textColorAccent;
+}}
 
 // Subscription ---------------------------------->
 .subscription {
-    width: 570px;
+width: 570px;
 height: 86px;
 
 &__title {
@@ -79,12 +76,12 @@ color: $backGroundColorMain;
 }
 
 &__form {
-    display: flex;
+display: flex;
 align-items: center;
 }
 
 &__label {
-    width: 358px;
+width: 358px;
 margin-right: 12px;
 }
 
@@ -110,10 +107,8 @@ color: rgba(255, 255, 255, 0.6);
 
 &:hover,
 &:focus {
-    border-color: $textColorAccent;
-}
-}
-}
+border-color: $textColorAccent;
+}}}
 
 
 

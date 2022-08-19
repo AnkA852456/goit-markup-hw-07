@@ -2,6 +2,7 @@
 
 &__section-comand,
 &__footer {
+@extend %list;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -19,8 +20,7 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: $backGroundColorMain;
-}
-}
+}}
 
 .socials {
 margin-right: auto;
@@ -38,9 +38,7 @@ justify-content: center;
 
 &:not(:last-child){
 margin-right: 10px;
-}
-}
-}
+}}}
 
 .socials-link {   
 &__section-comand,
@@ -61,18 +59,14 @@ transition: fill $transitionCubic, background-color $transitionCubic;
 &:focus {
 background-color: $textColorAccent;
 fill: $backGroundColorMain;
-}
-}
-}
+}}}
 
 .socials-link__footer {
 &--bgc {
 background-color:rgba(255, 255, 255, 0.1)
-}
-}
+}}
 
 .socials-image {
 &--bottom  {
 fill: $backGroundColorMain;
-}
-}
+}}

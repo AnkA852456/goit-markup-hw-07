@@ -157,6 +157,7 @@ letter-spacing: 0.03em;
 }
 
 &__link {
+@extend %link;
 color: $textColorAccent;
 text-decoration: none;
 font-size: 14px;

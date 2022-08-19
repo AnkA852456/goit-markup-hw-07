@@ -12,6 +12,7 @@ align-items: center;
 }
 
 .site-nav {
+@extend %list;
 display: $displayPosition;
 align-items: center;
 
@@ -30,6 +31,7 @@ margin-right: 50px;
 }
 
 &__link {
+@extend %link;
 display: block;
 padding-top: 32px;
 padding-bottom: 32px;
@@ -41,7 +43,6 @@ transition: color $transitionCubic;
 &:hover,
 &:focus {
 color: $textColorAccent;
-}
 }}
 
 .site-nav__link {
@@ -60,10 +61,10 @@ width: 100%;
 height: 4px;
 background-color: $textColorAccent;
 border-radius: 2px;
-}
-}
+}}}
 
 .auth-nav {
+@extend %list;
 display: $displayPosition;
 align-items: center;
 margin-left: auto;
@@ -79,6 +80,7 @@ margin-right: 50px;
 }
 
 &__link {
+@extend %link;
 display: $displayPosition;
 align-items: center;
 padding-top: 32px;
@@ -105,4 +107,3 @@ color: $textColorAccent;
 &:focus {
 fill: $textColorAccent;
 }}
-

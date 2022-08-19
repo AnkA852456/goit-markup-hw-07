@@ -1,7 +1,7 @@
 
 
 .logo {
-
+@extend %link;
 margin-right: 93px;
 padding-top: 24px;
 padding-bottom: 24px;
@@ -24,8 +24,6 @@ margin-left: 0;
 
 &--bottom {
     color: $backGroundColorMain;
-}
-}
-}
+}}}
 
 

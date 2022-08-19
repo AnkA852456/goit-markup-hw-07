@@ -14,6 +14,7 @@ color: $textColorHeaders;
 }
 
 &__button-list {
+@extend %list;
 display: flex;
 justify-content: center;
 margin-left: auto;
@@ -29,6 +30,7 @@ margin-right: 8px;
 // CARDS ------------------------------>
 .projects-card {
 &__list {
+@extend %list;
 display: flex;
 flex-wrap: wrap;
 }
@@ -47,6 +49,7 @@ margin-bottom: 0;
 }}
 
 &__link {
+@extend %link;
 display: block;
 
 transition: color $transitionCubic;

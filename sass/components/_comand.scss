@@ -1,6 +1,6 @@
 .section-comand {
 padding: 94px 0;
-background-color: var(--back-ground-color-third);
+background-color: $backGroundColorThird;
 
 &__title {
 margin-bottom: 50px;
@@ -15,6 +15,7 @@ color: $textColorHeaders;
 }
 
 &__list {
+@extend %list;
 display: flex;
 text-align: center;
 }
@@ -52,5 +53,4 @@ line-height: 1.19;
 letter-spacing: 0.03em;
 font-size: 16px;
 margin-bottom: 16px;
-}
-}
+}}
