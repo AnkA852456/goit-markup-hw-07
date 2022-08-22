@@ -1,8 +1,12 @@
 $displayPosition: flex;
 
+
+header {
+border-bottom: 1px solid #ECECEC;
+}
+
 .page-header {
 display: $displayPosition;
-border-bottom: 1px solid #ECECEC;
 }
 
 .page-nav {
